@@ -20,7 +20,7 @@ public class MoneyManager : MonoBehaviour
 
     void Start()
     {
-        _money = 0;
+        _money = 100;
         text.UpdateMoneyText();
     }
 
