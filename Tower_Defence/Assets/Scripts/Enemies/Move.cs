@@ -7,6 +7,7 @@ public class Move : MonoBehaviour
 {
 
     [SerializeField] Transform target = null;
+    EnemiesData data;
 
     NavMeshAgent agent;
     // Start is called before the first frame update
@@ -27,5 +28,9 @@ public class Move : MonoBehaviour
 
     public void SetDestination(Transform target){
         this.target = target;
+    }
+
+    public void SetData(EnemiesData data){
+        this.data = data;
     }
 }

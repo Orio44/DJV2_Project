@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Spawn(0,0);
+            Spawn(0,1);
         }
     }
 

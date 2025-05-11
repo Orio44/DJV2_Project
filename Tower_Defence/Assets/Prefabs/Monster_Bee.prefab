@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7955116708080176183, guid: 2198c891f3210744b9c764444d889f69, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: 56f6b984333138f4e8248009f4eb1e9c, type: 2}
     - target: {fileID: 115823832898906082, guid: 2198c891f3210744b9c764444d889f69, type: 3}
       propertyPath: m_Name
       value: Monster_Bee
@@ -63,5 +67,25 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 115823832898906082, guid: 2198c891f3210744b9c764444d889f69, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3297307638528861647}
   m_SourcePrefab: {fileID: 100100000, guid: 2198c891f3210744b9c764444d889f69, type: 3}
+--- !u!1 &5693167719821268687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 115823832898906082, guid: 2198c891f3210744b9c764444d889f69, type: 3}
+  m_PrefabInstance: {fileID: 5663642433420554541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-3297307638528861647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5693167719821268687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 418c762527e10db46a0538f635a05f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
