@@ -503,7 +503,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -691,7 +691,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6267063144387648671}
@@ -860,6 +860,7 @@ GameObject:
   - component: {fileID: 5338526286618367394}
   - component: {fileID: 134243280775624365}
   - component: {fileID: 34230308213411296}
+  - component: {fileID: 4419959351658180884}
   m_Layer: 0
   m_Name: TowerSelection
   m_TagString: Untagged
@@ -912,7 +913,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!114 &5338526286618367394
 MonoBehaviour:
@@ -975,6 +976,18 @@ MonoBehaviour:
   catapultTower: {fileID: 6980857984886443510, guid: 0139f408e1afb4c45b78d6e0d1119c73, type: 3}
   magic: {fileID: 11400000, guid: cfb2eb7b29f00774e859d5aa8f4480f4, type: 2}
   magicTower: {fileID: 7353237199973732865, guid: 0331ba08994ec594cb750064dfee1762, type: 3}
+--- !u!225 &4419959351658180884
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5390147915142685337}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &6290102455123509953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,7 +1327,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
