@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class UICost : MonoBehaviour
 {
-    [SerializeField] TowerSO data;
+    [SerializeField] TowerData data;
     [SerializeField] TextMeshProUGUI costText;
     // Start is called before the first frame update
     void OnEnable()

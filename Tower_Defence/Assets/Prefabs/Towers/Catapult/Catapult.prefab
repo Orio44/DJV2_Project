@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3612487898271286371}
+  - component: {fileID: 9108702365571124956}
   m_Layer: 0
   m_Name: Catapult
   m_TagString: Untagged
@@ -33,6 +34,19 @@ Transform:
   - {fileID: 5389152553176668981}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9108702365571124956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6980857984886443510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea14febe41ab8848b3b4eb3ed770461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponGO: {fileID: 8364210673804313390}
 --- !u!1 &7833636020615315113
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5389152553176668981}
   - component: {fileID: 6749982171220935661}
+  - component: {fileID: 2457015043585602246}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -201,3 +216,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2457015043585602246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8364210673804313390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a94aa64a3904ee40aa0764c78130caa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileModel: {fileID: 1369702797867427858, guid: 13c92815c3d3bcc4793de15b2a5db2c9, type: 3}

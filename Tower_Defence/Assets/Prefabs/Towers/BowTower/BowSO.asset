@@ -13,16 +13,23 @@ MonoBehaviour:
   m_Name: BowSO
   m_EditorClassIdentifier: 
   Cost: 0a0000001900000032000000
-  AttackSpeed:
-  - 0
-  - 0
-  - 0
+  AttackCooldown:
+  - 1
+  - 1
+  - 1
   ProjectileSpeed:
   - 0
   - 0
   - 0
   ProjectileDamage: 000000000000000000000000
   Range:
+  - 5
+  - 7.5
+  - 10
+  AOE:
   - 0
   - 0
   - 0
+  maskToShoot:
+    serializedVersion: 2
+    m_Bits: 192

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6507177387316667949}
   - component: {fileID: 8183709581195039717}
+  - component: {fileID: 4072458855628592371}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -84,6 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4072458855628592371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4154492498164204875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a94aa64a3904ee40aa0764c78130caa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileModel: {fileID: 2937745932882871206, guid: 5ea70bd9c9575cc41b0c6a5144508e5c, type: 3}
 --- !u!1 &5813896164523594892
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1279901026917244263}
+  - component: {fileID: -5251284579701975935}
   m_Layer: 0
   m_Name: MagicTower
   m_TagString: Untagged
@@ -201,3 +216,16 @@ Transform:
   - {fileID: 6507177387316667949}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5251284579701975935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7353237199973732865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea14febe41ab8848b3b4eb3ed770461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponGO: {fileID: 4154492498164204875}

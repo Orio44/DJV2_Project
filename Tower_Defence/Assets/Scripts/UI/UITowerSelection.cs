@@ -5,13 +5,13 @@ using UnityEngine;
 public class UITowerSelection : MonoBehaviour
 {
     [SerializeField] GameObject tile;
-    [SerializeField] TowerSO bow;
+    [SerializeField] TowerData bow;
     [SerializeField] GameObject bowTower;
-    [SerializeField] TowerSO slingshot;
+    [SerializeField] TowerData slingshot;
     [SerializeField] GameObject slingshotTower;
-    [SerializeField] TowerSO catapult;
+    [SerializeField] TowerData catapult;
     [SerializeField] GameObject catapultTower;
-    [SerializeField] TowerSO magic;
+    [SerializeField] TowerData magic;
     [SerializeField] GameObject magicTower;
     public void close()
     {

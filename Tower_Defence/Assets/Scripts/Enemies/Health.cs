@@ -6,9 +6,12 @@ public class Health : MonoBehaviour
 {
     private Animator animator;
     EnemiesData data;
+    bool _isAlreadyDead = false;
+    int _currentHealth;
 
     void Start()
     {
+        _currentHealth = data.maxHealth;
         animator = transform.Find("Sprite").GetComponent<Animator>();  
     }
     void Update()
@@ -18,9 +21,19 @@ public class Health : MonoBehaviour
             Death();
         }
     }
+    public void Damage(int damage){
+        _currentHealth -= damage;
+        if (_currentHealth<=0){
+            Death();
+        }
+    }
 
     public void Death()
     {
+        if (_isAlreadyDead){
+            return;
+        }
+        _isAlreadyDead = true;
         animator.SetTrigger("Death");
         StartCoroutine(DestroyAfterAnimation());
         ScoreManager.Instance.ModifyScore(data.score);
