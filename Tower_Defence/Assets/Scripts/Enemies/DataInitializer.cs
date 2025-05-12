@@ -8,9 +8,13 @@ public class DataInitializer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (TryGetComponent<Move>(out var script))
+        if (TryGetComponent<Move>(out var move))
         {
-            script.SetData(data);
+            move.SetData(data);
+        }
+        if (TryGetComponent<Health>(out var health))
+        {
+            health.SetData(data);
         }
     }
 

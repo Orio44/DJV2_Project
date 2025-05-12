@@ -5,6 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     private Animator animator;
+    EnemiesData data;
 
     void Start()
     {
@@ -22,7 +23,7 @@ public class Health : MonoBehaviour
     {
         animator.SetTrigger("Death");
         StartCoroutine(DestroyAfterAnimation());
-        
+        ScoreManager.Instance.ModifyScore(data.score);
     }
 
     private IEnumerator DestroyAfterAnimation()
@@ -30,5 +31,9 @@ public class Health : MonoBehaviour
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
 
         Destroy(gameObject);
+    }
+
+    public void SetData(EnemiesData data){
+        this.data = data;
     }
 }
