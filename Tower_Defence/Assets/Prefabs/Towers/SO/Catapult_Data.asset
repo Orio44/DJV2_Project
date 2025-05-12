@@ -10,19 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d9183c9f9674f142a4c45a205618fae, type: 3}
-  m_Name: MagicTowerSO
+  m_Name: Catapult_Data
   m_EditorClassIdentifier: 
-  Cost: 64000000fa000000f4010000
-  AttackSpeed:
-  - 0
-  - 0
-  - 0
+  Cost: 320000006e000000b4000000
+  AttackCooldown:
+  - 1
+  - 1
+  - 1
   ProjectileSpeed:
-  - 0
-  - 0
-  - 0
-  ProjectileDamage: 000000000000000000000000
+  - 20
+  - 20
+  - 20
+  ProjectileDamage: 0a0000000a0000000a000000
   Range:
-  - 0
-  - 0
-  - 0
+  - 10
+  - 10
+  - 10
+  AOE:
+  - 2
+  - 2
+  - 2
+  maskToShoot:
+    serializedVersion: 2
+    m_Bits: 128

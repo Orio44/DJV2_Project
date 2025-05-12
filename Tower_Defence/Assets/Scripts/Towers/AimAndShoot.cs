@@ -47,6 +47,7 @@ public class AimAndShoot : MonoBehaviour
 
         foreach (Collider2D col in colliders)
         {
+            Debug.Log("aaaaah" + (Vector3.Distance(center, col.gameObject.transform.position))+ center + col.gameObject.transform.position);
             Vector2 closestPoint = col.ClosestPoint(center);
             float distance = Vector2.Distance(center, closestPoint);
             if (distance < minDistance)

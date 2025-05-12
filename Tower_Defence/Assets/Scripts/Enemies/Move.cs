@@ -32,5 +32,6 @@ public class Move : MonoBehaviour
 
     public void SetData(EnemiesData data){
         this.data = data;
+        agent.speed = data.speed;
     }
 }

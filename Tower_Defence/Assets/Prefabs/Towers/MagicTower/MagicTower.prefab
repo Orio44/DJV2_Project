@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6507177387316667949}
   - component: {fileID: 8183709581195039717}
   - component: {fileID: 4072458855628592371}
+  - component: {fileID: 1677603950478133143}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4154492498164204875}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.4, z: 9}
+  m_LocalPosition: {x: 0, y: 0.1, z: 9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -98,6 +99,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileModel: {fileID: 2937745932882871206, guid: 5ea70bd9c9575cc41b0c6a5144508e5c, type: 3}
+--- !u!95 &1677603950478133143
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4154492498164204875}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: -449561076192086563, guid: 2cfcb9c8b241d954297ab877368ccd77, type: 3}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5813896164523594892
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +146,7 @@ Transform:
   m_GameObject: {fileID: 5813896164523594892}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0.5, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -208,7 +230,7 @@ Transform:
   m_GameObject: {fileID: 7353237199973732865}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 2, z: -10}
   m_LocalScale: {x: 3, y: 3, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -228,4 +250,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea14febe41ab8848b3b4eb3ed770461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: cfb2eb7b29f00774e859d5aa8f4480f4, type: 2}
   weaponGO: {fileID: 4154492498164204875}

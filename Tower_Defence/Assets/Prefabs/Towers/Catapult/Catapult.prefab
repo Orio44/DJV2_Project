@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 6980857984886443510}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: -10}
+  m_LocalPosition: {x: 0, y: 2, z: -10}
   m_LocalScale: {x: 3, y: 3, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea14febe41ab8848b3b4eb3ed770461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 94078aa5f5c95324c8849dae9072bb60, type: 2}
   weaponGO: {fileID: 8364210673804313390}
 --- !u!1 &7833636020615315113
 GameObject:
@@ -142,6 +143,7 @@ GameObject:
   - component: {fileID: 5389152553176668981}
   - component: {fileID: 6749982171220935661}
   - component: {fileID: 2457015043585602246}
+  - component: {fileID: 4729032090501795019}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -158,7 +160,7 @@ Transform:
   m_GameObject: {fileID: 8364210673804313390}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.7, z: 9}
+  m_LocalPosition: {x: 0, y: -0.51, z: 9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -229,3 +231,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileModel: {fileID: 1369702797867427858, guid: 13c92815c3d3bcc4793de15b2a5db2c9, type: 3}
+--- !u!95 &4729032090501795019
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8364210673804313390}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 2181745791695179941, guid: a2c2651f02cd72649ae4c7ee2b77b104, type: 3}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

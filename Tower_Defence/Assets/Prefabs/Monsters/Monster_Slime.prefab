@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster_Slime
       objectReference: {fileID: 0}
+    - target: {fileID: 115823832898906082, guid: 2198c891f3210744b9c764444d889f69, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3180216409611906135, guid: 2198c891f3210744b9c764444d889f69, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -55,6 +59,10 @@ PrefabInstance:
     - target: {fileID: 3180216409611906135, guid: 2198c891f3210744b9c764444d889f69, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876360220367650336, guid: 2198c891f3210744b9c764444d889f69, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8174003660038160374, guid: 2198c891f3210744b9c764444d889f69, type: 3}
       propertyPath: m_Sprite

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e41cad0a80281478b5e85c9085617c, type: 3}
   m_Name: Slime_Data
   m_EditorClassIdentifier: 
-  name: 
-  maxHealth: 0
-  speed: 0
+  monsterName: Blob
+  maxHealth: 10
+  speed: 2
+  score: 0

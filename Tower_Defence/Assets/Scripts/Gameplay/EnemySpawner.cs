@@ -20,6 +20,9 @@ public class EnemySpawner : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
             Spawn(0,1);
+        } if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Spawn(0,0);
         }
     }
 

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d9183c9f9674f142a4c45a205618fae, type: 3}
-  m_Name: CatapultSO
+  m_Name: Slingshot_Data
   m_EditorClassIdentifier: 
-  Cost: 320000006e000000b4000000
-  AttackSpeed:
+  Cost: 14000000230000003c000000
+  AttackCooldown:
   - 0
   - 0
   - 0
@@ -26,3 +26,10 @@ MonoBehaviour:
   - 0
   - 0
   - 0
+  AOE:
+  - 0
+  - 0
+  - 0
+  maskToShoot:
+    serializedVersion: 2
+    m_Bits: 64

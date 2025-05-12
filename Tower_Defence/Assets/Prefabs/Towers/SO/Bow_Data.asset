@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d9183c9f9674f142a4c45a205618fae, type: 3}
-  m_Name: BowSO
+  m_Name: Bow_Data
   m_EditorClassIdentifier: 
   Cost: 0a0000001900000032000000
   AttackCooldown:
@@ -18,14 +18,14 @@ MonoBehaviour:
   - 1
   - 1
   ProjectileSpeed:
-  - 0
-  - 0
-  - 0
-  ProjectileDamage: 000000000000000000000000
+  - 35
+  - 35
+  - 35
+  ProjectileDamage: 0a0000000000000000000000
   Range:
-  - 5
-  - 7.5
   - 10
+  - 15
+  - 20
   AOE:
   - 0
   - 0
