@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
     bool _isAlreadyDead = false;
     int _currentHealth;
     AudioSource source;
+    [SerializeField] private UIEnemyLife bar;
 
     void Start()
     {
@@ -26,7 +27,9 @@ public class Health : MonoBehaviour
         }
     }
     public void Damage(int damage){
+        bar.gameObject.SetActive(true);
         _currentHealth -= damage;
+        bar.UpdateSlider(_data.maxHealth, _currentHealth);
         if (_currentHealth<=0){
             Death();
         }
