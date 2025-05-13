@@ -24,6 +24,7 @@ public class Health : MonoBehaviour
     }
     void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.S))
         {
             Death();
@@ -35,6 +36,9 @@ public class Health : MonoBehaviour
         bar.UpdateSlider(_data.maxHealth, _currentHealth);
         if (_currentHealth<=0){
             Death();
+        }
+        if (_data.typeMonster == 4 && _currentHealth<=_data.maxHealth/2){
+            moveSc.ChangeSpeed(_data.speed*3);
         }
     }
 
@@ -62,5 +66,8 @@ public class Health : MonoBehaviour
 
     public void SetData(EnemiesData data){
         this._data = data;
+    }
+    public bool IsDead(){
+        return _isAlreadyDead;
     }
 }

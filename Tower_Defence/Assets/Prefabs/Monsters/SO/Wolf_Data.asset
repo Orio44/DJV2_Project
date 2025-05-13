@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Wolf_Data
   m_EditorClassIdentifier: 
   monsterName: Loup
+  typeMonster: 6
   maxHealth: 100
   speed: 5
   score: 5

@@ -47,7 +47,7 @@ public class AimAndShoot : MonoBehaviour
         {
             Vector2 closestPoint = col.ClosestPoint(center);
             float distance = Vector2.Distance(center, closestPoint);
-            if (distance < minDistance)
+            if (!col.gameObject.GetComponent<Health>().IsDead() && distance < minDistance)
             {
                 minDistance = distance;
                 closest = col;

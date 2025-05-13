@@ -4,6 +4,7 @@ using UnityEngine;
 public class EnemiesData : ScriptableObject
 {
     public string monsterName;
+    public int typeMonster;
 
     public int maxHealth;
     public float speed;
