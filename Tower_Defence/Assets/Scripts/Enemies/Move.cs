@@ -23,11 +23,11 @@ public class Move : MonoBehaviour
     {
         if (target != null){
             agent.SetDestination(target.position);
-            if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance && !agent.hasPath || agent.velocity.sqrMagnitude == 0f)
+            if (!agent.pathPending && agent.remainingDistance <= 5f && !agent.hasPath)
             {
                 MultiplyerManager.Instance.EnemyPassed();
-                Debug.Log("Agent est arrivé !");
-                //Destroy(gameObject);
+                ScoreManager.Instance.ModifyScore(_data.score);
+                Destroy(gameObject);
             }
         }
     }

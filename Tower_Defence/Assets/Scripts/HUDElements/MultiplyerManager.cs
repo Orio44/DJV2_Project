@@ -66,10 +66,10 @@ public class MultiplyerManager : MonoBehaviour
         }
         else
         {
-            _currentMultiplyer = 1;
+            _currentMultiplyer = -1;
             _enemyCount = 1;
         } 
-        
+        Debug.Log(_currentMultiplyer);
         text.UpdateMultiplyerText();
     }
 }

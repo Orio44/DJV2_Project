@@ -2212,6 +2212,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1736421010232682755, guid: 4c039423262e056469220ca5b940a0ee, type: 3}
+      propertyPath: maxMultiplyer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736421010232682755, guid: 4c039423262e056469220ca5b940a0ee, type: 3}
+      propertyPath: enemyCountToGrow
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3113186339696510984, guid: 4c039423262e056469220ca5b940a0ee, type: 3}
       propertyPath: spawner
       value: 
