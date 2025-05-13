@@ -17,12 +17,30 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            Spawn(0,1);
-        } if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             Spawn(0,0);
+        } if (Input.GetKeyDown(KeyCode.W))
+        {
+            Spawn(0,1);
+        }if (Input.GetKeyDown(KeyCode.E))
+        {
+            Spawn(0,2);
+        }if (Input.GetKeyDown(KeyCode.R))
+        {
+            Spawn(0,3);
+        }if (Input.GetKeyDown(KeyCode.T))
+        {
+            Spawn(0,4);
+        }if (Input.GetKeyDown(KeyCode.Y))
+        {
+            Spawn(0,5);
+        }if (Input.GetKeyDown(KeyCode.U))
+        {
+            Spawn(0,6);
+        }if (Input.GetKeyDown(KeyCode.I))
+        {
+            Spawn(0,7);
         }
     }
 
@@ -31,7 +49,7 @@ public class EnemySpawner : MonoBehaviour
             Debug.Log("Invalid iSpawnPoint");
             return;
         }
-        if (iEnemy>=SpawnPointList.Count || iEnemy<0){
+        if (iEnemy>=EnemiesList.Count || iEnemy<0){
             Debug.Log("Invalid iEnemy");
             return;
         }

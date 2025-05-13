@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Bee_Data
   m_EditorClassIdentifier: 
   monsterName: Abeille
-  maxHealth: 10
+  maxHealth: 100
   speed: 2
   score: 10

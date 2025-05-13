@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Slime_Data
   m_EditorClassIdentifier: 
   monsterName: Blob
-  maxHealth: 10
+  maxHealth: 150
   speed: 2
   score: 0
