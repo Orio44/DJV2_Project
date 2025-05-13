@@ -10,10 +10,13 @@ public class Health : MonoBehaviour
     int _currentHealth;
     AudioSource source;
     [SerializeField] private UIEnemyLife bar;
+    Move moveSc;
 
     void Start()
     {
+        moveSc = GetComponent<Move>();
         source = GetComponent<AudioSource>();
+        source.loop = true;
         source.clip = _data.clipMove;
         source.Play();
         _currentHealth = _data.maxHealth;
@@ -40,6 +43,7 @@ public class Health : MonoBehaviour
         if (_isAlreadyDead){
             return;
         }
+        moveSc.Stop();
         source.clip = _data.clipDeath;
         source.Play();
         _isAlreadyDead = true;

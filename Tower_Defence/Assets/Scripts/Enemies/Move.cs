@@ -34,4 +34,8 @@ public class Move : MonoBehaviour
         this.data = data;
         agent.speed = data.speed;
     }
+
+    public void Stop(){
+        agent.isStopped = true;
+    }
 }
