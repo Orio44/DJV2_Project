@@ -30,6 +30,7 @@ MonoBehaviour:
   - 2
   - 2
   - 2
+  projectileType: 1
   maskToShoot:
     serializedVersion: 2
     m_Bits: 128

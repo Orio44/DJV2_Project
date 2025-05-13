@@ -12,5 +12,7 @@ public class TowerData : ScriptableObject
     public float[] Range = new float[3];
     public float[] AOE = new float[3];
 
+    public int projectileType;
+
     public LayerMask maskToShoot;
 }

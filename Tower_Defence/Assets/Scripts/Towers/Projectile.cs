@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] int projectileType;
     GameObject _target;
     Vector3 _posTarget;
     TowerData _data;
@@ -22,7 +21,7 @@ public class Projectile : MonoBehaviour
             return;
         }
         Vector3 direction;
-        switch (projectileType){
+        switch (_data.projectileType){
             case 0:
                 if ((_posTarget - transform.position).sqrMagnitude<0.1f){
                     if (_target!=null){

@@ -16,6 +16,7 @@ public class Weapon : MonoBehaviour
     }
 
     void Update(){
+        Debug.Log(_currentTarget);
         if (_currentTarget != null){
             
             Debug.Log("Valeurs : a = " + (Vector3.Distance(_currentTarget.transform.position, transform.position)) + ", b = " + (_currentTarget.transform.position)+transform.position);
@@ -30,6 +31,10 @@ public class Weapon : MonoBehaviour
     }
 
     public void CreateProjectile(){
+        Debug.Log("coucou");
+        if (_currentTarget == null){
+            return;
+        }
         GameObject newProjectileGO = Instantiate(projectileModel, transform.position, transform.rotation);
         Projectile newProjectile = newProjectileGO.GetComponent<Projectile>();
         newProjectile.SetData(_data);
@@ -46,6 +51,9 @@ public class Weapon : MonoBehaviour
     }
     
     void LookAt(Vector3 target){
+        if (_data.projectileType == 2){
+            return;
+        }
         Vector3 dir = target - transform.parent.position;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.parent.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
