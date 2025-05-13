@@ -37,11 +37,8 @@ public class Health : MonoBehaviour
         if (_isAlreadyDead){
             return;
         }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            source.clip = _data.clipDeath;
-            source.Play();
-        }
+        source.clip = _data.clipDeath;
+        source.Play();
         _isAlreadyDead = true;
         animator.SetTrigger("Death");
         StartCoroutine(DestroyAfterAnimation());

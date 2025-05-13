@@ -16,3 +16,5 @@ MonoBehaviour:
   maxHealth: 5000
   speed: 0.5
   score: 5000
+  clipMove: {fileID: 8300000, guid: 2c69861528862c841a0f81570b638586, type: 3}
+  clipDeath: {fileID: 8300000, guid: ab07b5de53003f340864dd7a5321ed53, type: 3}
