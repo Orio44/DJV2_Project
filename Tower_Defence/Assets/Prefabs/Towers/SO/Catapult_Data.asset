@@ -14,22 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: 320000006e000000b4000000
   AttackCooldown:
-  - 1
-  - 1
-  - 1
+  - 4
+  - 3.5
+  - 3
   ProjectileSpeed:
-  - 20
-  - 20
-  - 20
-  ProjectileDamage: 0a0000000a0000000a000000
+  - 15
+  - 15
+  - 15
+  ProjectileDamage: 320000004b00000073000000
   Range:
   - 10
   - 10
   - 10
   AOE:
   - 2
-  - 2
-  - 2
+  - 3
+  - 4
   projectileType: 1
   maskToShoot:
     serializedVersion: 2

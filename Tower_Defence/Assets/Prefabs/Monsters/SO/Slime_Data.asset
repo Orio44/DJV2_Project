@@ -15,4 +15,4 @@ MonoBehaviour:
   monsterName: Blob
   maxHealth: 150
   speed: 2
-  score: 0
+  score: 10
