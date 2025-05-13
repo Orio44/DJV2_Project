@@ -32,29 +32,44 @@ public class MultiplyerManager : MonoBehaviour
         return _currentMultiplyer;
     }
 
-    public void ResetMultiplyer()
-    {
-        if(_currentMultiplyer > 0)
+
+
+    public void EnemyKilled(){
+        if (_currentMultiplyer > 0)
         {
-            _currentMultiplyer = -1;
+            _enemyCount++;
+            if (_enemyCount>=enemyCountToGrow){
+                _enemyCount=0;
+                if (_currentMultiplyer< maxMultiplyer){
+                    _currentMultiplyer++;
+                }
+            }
         }
         else
         {
             _currentMultiplyer = 1;
-        }
+            _enemyCount = 1;
+        } 
+        
         text.UpdateMultiplyerText();
     }
-
-    public void ModifyMultiplyer()
-    {
-        if (_currentMultiplyer > 0)
+    public void EnemyPassed(){
+        if (_currentMultiplyer < 0)
         {
-            _currentMultiplyer++;
+            _enemyCount++;
+            if (_enemyCount>=enemyCountToGrow){
+                _enemyCount=0;
+                if (_currentMultiplyer> -maxMultiplyer){
+                    _currentMultiplyer--;
+                }
+            }
         }
         else
         {
-            _currentMultiplyer--;
-        }
+            _currentMultiplyer = 1;
+            _enemyCount = 1;
+        } 
+        
         text.UpdateMultiplyerText();
     }
 }

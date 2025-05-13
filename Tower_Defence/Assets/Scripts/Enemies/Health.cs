@@ -43,6 +43,7 @@ public class Health : MonoBehaviour
         if (_isAlreadyDead){
             return;
         }
+        MultiplyerManager.Instance.EnemyKilled();
         moveSc.Stop();
         source.clip = _data.clipDeath;
         source.Play();
