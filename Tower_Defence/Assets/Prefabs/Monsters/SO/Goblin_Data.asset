@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Goblin_Data
   m_EditorClassIdentifier: 
   monsterName: Gobelin
+  typeMonster: 2
   maxHealth: 70
   speed: 5
   score: 25

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Flying_Demon_Data
   m_EditorClassIdentifier: 
   monsterName: "Grand D\xE9mon Rouge"
+  typeMonster: 7
   maxHealth: 5000
   speed: 0.5
   score: 5000

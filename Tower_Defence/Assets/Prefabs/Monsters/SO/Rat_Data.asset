@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Rat_Data
   m_EditorClassIdentifier: 
   monsterName: Rat
+  typeMonster: 3
   maxHealth: 50
   speed: 5
   score: 1
