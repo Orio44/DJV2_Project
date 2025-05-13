@@ -8,15 +8,21 @@ public class Projectile : MonoBehaviour
     Vector3 _posTarget;
     TowerData _data;
     int _level;
+    
+    bool hasImpacted = false;
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = transform.Find("Sprite").gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (hasImpacted){
+            return;
+        }
         if (_posTarget == null){
             return;
         }
@@ -27,7 +33,8 @@ public class Projectile : MonoBehaviour
                     if (_target!=null){
                         _target.GetComponent<Health>().Damage(_data.ProjectileDamage[_level]);
                     }
-                    Destroy(gameObject);
+                    animator.SetTrigger("Impact");
+                    hasImpacted = true;
                 }
                 LookAt(_posTarget);
                 direction = Vector3.MoveTowards(transform.position, _posTarget, _data.ProjectileSpeed[_level] * Time.deltaTime);
@@ -39,21 +46,24 @@ public class Projectile : MonoBehaviour
             case 1:
                 if ((_posTarget - transform.position).sqrMagnitude<0.1f){
                     Explode();
-                    Destroy(gameObject);
+                    animator.SetTrigger("Impact");
+                    hasImpacted = true;
                 }
                 direction = Vector3.MoveTowards(transform.position, _posTarget, _data.ProjectileSpeed[_level] * Time.deltaTime);
                 transform.position = direction;
                 break;
             case 2:
                 Explode();
-                Destroy(gameObject);
+                animator.SetTrigger("Impact");
+                hasImpacted = true;
                 break;
             case 3:
                 if ((_posTarget - transform.position).sqrMagnitude<0.1f){
                     if (_target!=null){
                         _target.GetComponent<Health>().Damage(_data.ProjectileDamage[_level]);
                     }
-                    Destroy(gameObject);
+                    animator.SetTrigger("Impact");
+                    hasImpacted = true;
                 }
                 direction = Vector3.MoveTowards(transform.position, _posTarget, _data.ProjectileSpeed[_level] * Time.deltaTime);
                 transform.position = direction;
@@ -62,7 +72,7 @@ public class Projectile : MonoBehaviour
                 }
                 break;
             default:
-            break;
+                break;
         }
     }
 
@@ -96,4 +106,6 @@ public class Projectile : MonoBehaviour
     public void SetLevel(int level){
         _level = level;
     }
+
+    
 }
