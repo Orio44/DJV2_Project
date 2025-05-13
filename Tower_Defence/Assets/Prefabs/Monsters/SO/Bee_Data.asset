@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Bee_Data
   m_EditorClassIdentifier: 
   monsterName: Abeille
+  typeMonster: 0
   maxHealth: 100
   speed: 2
   score: 20
+  money: 20
   clipMove: {fileID: 8300000, guid: ad9dc234d2a127644a091490859a44bc, type: 3}
   clipDeath: {fileID: 8300000, guid: 8c9fb487d1ed4644ab5dcff7422f1d69, type: 3}

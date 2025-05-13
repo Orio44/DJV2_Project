@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterName: Chevalier
   typeMonster: 4
-  maxHealth: 100
+  maxHealth: 300
   speed: 2
   score: 150
+  money: 50
   clipMove: {fileID: 8300000, guid: 9ba549d422223a242bd5aec97069b429, type: 3}
   clipDeath: {fileID: 8300000, guid: 55c7fc3468d3d6549b94c9e64509321d, type: 3}

@@ -9,6 +9,7 @@ public class EnemiesData : ScriptableObject
     public int maxHealth;
     public float speed;
     public int score;
+    public int money;
 
     public AudioClip clipMove;
     public AudioClip clipDeath;

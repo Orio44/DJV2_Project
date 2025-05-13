@@ -26,7 +26,8 @@ public class Move : MonoBehaviour
             if (!agent.pathPending && agent.remainingDistance <= 5f && !agent.hasPath)
             {
                 MultiplyerManager.Instance.EnemyPassed();
-                ScoreManager.Instance.ModifyScore(data.score);
+                WaveManager.Instance.EnemyKilled();
+                ScoreManager.Instance.ModifyScore(_data.score);
                 Destroy(gameObject);
             }
         }

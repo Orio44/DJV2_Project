@@ -25,7 +25,7 @@ public class Health : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             Death();
         }
@@ -48,6 +48,7 @@ public class Health : MonoBehaviour
             return;
         }
         MultiplyerManager.Instance.EnemyKilled();
+        WaveManager.Instance.EnemyKilled();
         moveSc.Stop();
         source.clip = _data.clipDeath;
         source.Play();
@@ -55,6 +56,7 @@ public class Health : MonoBehaviour
         animator.SetTrigger("Death");
         StartCoroutine(DestroyAfterAnimation());
         ScoreManager.Instance.ModifyScore(_data.score);
+        MoneyManager.Instance.EarnMoney(_data.money);
     }
 
     private IEnumerator DestroyAfterAnimation()

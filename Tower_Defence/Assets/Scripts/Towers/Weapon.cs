@@ -26,10 +26,8 @@ public class Weapon : MonoBehaviour
     }
 
     void Update(){
-        Debug.Log(_currentTarget);
         if (_currentTarget != null){
             
-            Debug.Log("Valeurs : a = " + (Vector3.Distance(_currentTarget.transform.position, transform.position)) + ", b = " + (_currentTarget.transform.position)+transform.position);
             if (Vector3.Distance(_currentTarget.transform.position, transform.position)<_data.Range[_level]){
                 LookAt(_currentTarget.transform.position);
             }
@@ -49,11 +47,13 @@ public class Weapon : MonoBehaviour
     }
     public void Attack(GameObject target){
         _currentTarget = target;
+        if (animator == null){
+            animator = GetComponent<Animator>();
+        }
         animator.SetTrigger("Attack");
     }
 
     public void CreateProjectile(){
-        Debug.Log("coucou");
         if (_currentTarget == null){
             return;
         }

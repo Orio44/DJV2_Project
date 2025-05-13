@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        /*if (Input.GetKeyDown(KeyCode.Q))
         {
             Spawn(0,0);
         } if (Input.GetKeyDown(KeyCode.W))
@@ -41,7 +41,7 @@ public class EnemySpawner : MonoBehaviour
         }if (Input.GetKeyDown(KeyCode.I))
         {
             Spawn(0,7);
-        }
+        }*/
     }
 
     public void Spawn(int iSpawnPoint, int iEnemy){
